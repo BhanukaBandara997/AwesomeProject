@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Button, TextInput } from 'react-native';
 
 class PlaceInput extends Component {
-
+    /// Set Name
     // State variable for the text input
     state = {
         placeName: ""
