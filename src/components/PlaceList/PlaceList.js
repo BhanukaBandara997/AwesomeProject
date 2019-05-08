@@ -9,12 +9,11 @@ const placeList = props => {
         <ListItem
             key={i}
             placeName={place}
-            onItemPressed={() => alert("Item Pressed" + i)}></ListItem>
+            onItemPressed={() => props.onItemDeleted(i)}></ListItem>
     ));
 
-    render(
-        <View style={styles.listContainer}>{placesOutput}</View>
-    );
+    return <View style={styles.listContainer}>{placesOutput}</View>;
+    
 };
 
 const styles = StyleSheet.create({
