@@ -6,7 +6,6 @@ const initialState = {
     selectedPlace: null
 };
 
-
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_PLACE:
@@ -14,9 +13,9 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 places: state.places.concat({
                     key: Math.random(),
-                    name: placeName,
+                    name: action.placeName,
                     image: {
-                        uri: 'https://www.google.com/search?q=background+images&safe=active&tbm=isch&source=iu&ictx=1&fir=V9QSez5mpRnf0M%3A%2CkcdXjkNuF-KTxM%2C_&vet=1&usg=AI4_-kRzfBOeZ1u6wod3DBp0gYg-APb8uA&sa=X&ved=2ahUKEwilreaA0pDiAhWE73MBHWoyCPIQ9QEwCXoECAcQFg#imgrc=RRx0s15l48ONCM:&vet=1'
+                        uri: "https://c1.staticflickr.com/5/4096/4744241983_34023bf303_b.jpg"
                     }
                 })
             };
