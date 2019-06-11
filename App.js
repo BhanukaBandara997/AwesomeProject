@@ -32,7 +32,10 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <PlaceDetail selectedPlace={this.props.selectedPlace} onDeleteHandler={this.placeDeletedHandler} onModalCloseHandler={this.modalClosedHandler} />
+        <PlaceDetail 
+        selectedPlace={this.props.selectedPlace} 
+        onDeleteHandler={this.placeDeletedHandler} 
+        onModalCloseHandler={this.modalClosedHandler} />
         <PlaceInput onPlaceAdded={this.placeAddedHandler} />
         <PlaceList places={this.props.places} onItemSelected={this.placeSelectedHandler} />
       </View>
